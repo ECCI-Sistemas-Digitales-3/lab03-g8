@@ -6,38 +6,34 @@
 ## Preguntas
 
 1. ¿Qué función cumple ```plt.fignum_exists(self.fig.number)``` en el ciclo principal?
+RTA:Este Verifica si la ventana de la gráfica sigue abierta; si se cierra, el bucle termina.
 
 2. ¿Por qué se usa ```time.sleep(self.intervalo)``` y qué pasa si se quita?
+RTA:Pausa el programa entre lecturas; si se quita, el monitoreo será demasiado rápido y cargará el CPU innecesariamente.
 
 3. ¿Qué ventaja tiene usar ```__init__``` para inicializar listas y variables?
+RTA:Permite que cada instancia tenga sus propios datos y asegura que todo esté listo al crear el objeto.
 
 4. ¿Qué se está midiendo con ```self.inicio = time.time()```?
+RTA:Su funcion es guarda el instante de inicio del monitoreo para calcular el tiempo transcurrido.
 
 5. ¿Qué hace exactamente ```subprocess.check_output(...)```?
+RTA: Este ejecuta un comando del sistema y devuelve su salida como texto.
 
 6. ¿Por qué se almacena ```ahora = time.time() - self.inicio``` en lugar del tiempo absoluto?
+RTA:Sirve Para mostrar el tiempo relativo desde que empezó el monitoreo, lo cual es más útil en la gráfica.
 
 7. ¿Por qué se usa ```self.ax.clear()``` antes de graficar?
+RTA:Su funcion es limpia la gráfica anterior para evitar que los datos se dibujen encima y se sobrecargue visualmente.
 
 8. ¿Qué captura el bloque ```try...except``` dentro de ```leer_temperatura()```?
+RTA:El ecuentra los errores al ejecutar el comando o convertir la salida a número, evitando que el programa se detenga.
 
-9. ¿Cómo podría modificar el script para guardar las temperaturas en un archivo .```csv```?
+9. ¿Cómo podría modificar el script para guardar las temperaturas en un archivo .```csv```?RTA:Ya lo hace con self.**guardar_csv(tiempo, temperatura)**; no necesitas modificar nada más
 # Documentacion 
 # Monitor de Temperatura para Raspberry Pi
 
 En este proyecto se utiliza Python para monitorear la temperatura de la CPU de una Raspberry Pi y graficarla en tiempo real. Además, los datos se almacenan en un archivo CSV para su posterior análisis.
-
-Importación de librerías
-Se importan las siguientes librerías:
-- matplotlib.pyplot: Utilizada para graficar la temperatura en tiempo real.
-
-- time: Para gestionar los tiempos de muestreo de la temperatura.
-
-- subprocess: Permite ejecutar comandos del sistema, en este caso, vcgencmd, para obtener la temperatura de la Raspberry Pi.
-
-- csv: Para guardar los datos de temperatura y tiempo en un archivo CSV.
-
-- os: Se usa para verificar la existencia del archivo CSV.
 
  La funcion de este codigo se encarga de monitorear la temperatura de la CPU de una Raspberry Pi en tiempo real, 
  graficando los resultados y guardándolos en un archivo CSV para su posterior análisis.  Primero, se importa la librería **matplotlib** para la creación de la gráfica, **time** para gestionar el 
