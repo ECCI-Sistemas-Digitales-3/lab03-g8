@@ -2,7 +2,7 @@
 # Lab03: Visualización de Datos en Raspberry Pi Zero W
 
 ## Integrantes
-[Brayan Cufiño]()
+[Brayan Cufiño](https://github.com/BACT99)
 
 [Ivan Castaño ](https://github.com/IFC999)
 ## Documentación 
@@ -63,3 +63,6 @@ La función **graficar** actualiza la visualización de la gráfica en tiempo re
  el tiempo transcurrido y la temperatura. Al mismo tiempo, **guardar_csv** asegura que cada medición de temperatura  y su correspondiente tiempo se registren correctamente en el archivo CSV para análisis posterior Por último, **ejecutar** es el método principal que arranca el monitoreo en un bucle continuo, actualizando los 
 datos, graficando y almacenando la información, hasta que el usuario interrumpe el proceso manualmente con una 
  señal de interrupción.
+
+ ### Grafica 
+<img src="grafica.jpeg" alt="Grafica temperatura" width="700"/>
