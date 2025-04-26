@@ -6,7 +6,7 @@
 
 [Ivan Castaño ](https://github.com/IFC999)
 ## Documentación 
-<img src="Diagrama lab3" alt="Describe IRIS animate" width="1000"/>
+<img src="Diagrama lab3.jpg" alt="Diagrama lab3" width="1000"/>
 
 ## Preguntas
 
