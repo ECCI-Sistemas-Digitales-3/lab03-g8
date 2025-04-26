@@ -2,6 +2,10 @@
 # Lab03: Visualización de Datos en Raspberry Pi Zero W
 
 ## Integrantes
+[Brayan Cufiño]()
+
+[Ivan Castaño ](https://github.com/IFC999)
+## Documentación 
 
 ## Preguntas
 
